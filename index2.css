@@ -1,0 +1,51 @@
+img{
+    height:100px;
+    width:100px;
+}
+
+ .a1{
+  
+  display:block;
+  margin-top: 20px;
+  animation-duration:6s ;
+  animation-delay: 0.3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-name: movex;
+  
+ }
+
+@keyframes movex{
+  0%{
+    transform: translateX(300px) rotate(0deg);
+  }
+
+  50%{
+     transform: translateX(1300px) rotate(360deg);
+  }
+
+  100%{
+    transform: translateX(300px) rotate(-360deg);
+  }
+}
+
+.b1{
+  margin-top: 10px;
+  display:block;
+  animation-duration:6s ;
+  animation-delay: 0.3s;
+  animation-iteration-count: infinite;
+  animation-name: movey ;
+}
+
+@keyframes movey{
+    0%{
+      transform: translateY(0px) rotate(0deg);
+    }
+    50%{
+       transform: translateY(500px) rotate(360deg);
+    }
+    100%{
+      transform: translateY(0px) rotate(-360deg);
+    }
+  }

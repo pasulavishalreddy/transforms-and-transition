@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main1{
+            background-color: aqua;
+            height: 100px;
+            width: 100px;
+            animation: movex 2s infinite;
+        }
+        .main2{
+            background-color: rgb(9, 18, 18);
+            height: 100px;
+            width: 100px;
+            animation: movey 2s infinite;
+        }
+        img{
+            height: 200px;
+            width: 200px;
+        }
+        @keyframes movex {
+            0%{
+                left: 0px;
+                transform: translate(300px) rotate(0deg);
+                
+            }
+
+            50%{
+                transform: translate(100px) rotate(360deg);
+            }
+
+            100%{
+                transform: translate(0px) rotate(0deg);
+            }
+        }
+        @keyframes movey {
+            0%{
+                top: 0px;
+                transform: translatey(300px) rotate(0deg);
+                
+            }
+
+            50%{
+                transform: translatey(100px) rotate(360deg);
+            }
+
+            100%{
+                transform: translatey(0px) rotate(0deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main1"><img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_640.jpg" height="100px" width="100px" alt=""></div>
+    <div class="main2"><img src="https://img.freepik.com/free-photo/colorful-design-with-spiral-design_188544-9588.jpg" height="100px" width="100px" alt=""></div>
+</body>
+</html>
